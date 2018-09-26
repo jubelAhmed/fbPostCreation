@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "senderName": "jubel ahmed",
+      "post": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat in qui totam voluptates? Ut iusto officiis aperiam re dolorum ex commodi dignissimos! Molestias, natus eaque.",
+      "style": {
+        "bgColor": "#ff6347",
+        "fontColor": "#6a5acd",
+        "fontSize": "16",
+        "fontFamily": "Courier New"
+      },
+      "reactions":[
+        {
+          "totalReactions" : "10",
+           "likes" : {
+             "allLikes": [
+               {
+                 "name" : "jubel ahmed",
+                 "time" : "10-5-2018"
+               }
+             ]
+           }
+        }
+       
+      ],
+      "comments":{
+        "totalComments" : "11",
+        "allComments" : [
+          {
+            "id": 1,
+            "commenterName": "badhon",
+            "comment": "this is awesome post"
+          },
+          {
+            "commenterName": "as",
+            "comment": "assasa",
+            "id": 2
+          },
+          {
+            "commenterName": "asas",
+            "comment": "assasas",
+            "id": 3
+          },
+          {
+            "commenterName": "jubel",
+            "comment": "ahmed",
+            "id": 4
+          }
+        ]
+      }
+    }
+  ]
+}

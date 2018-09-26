@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>myBlogPost</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Blog Post</span>
+    </nav>
+
+    <section>
+        <div class="container-fluid bg-white px-5" id="post-container">
+            <div class="post-control">
+                <div class="heading">
+                    <p class="h3 text-success text-uppercase">Post creation</p>
+                </div>
+                <div class="post-body">
+                    <div class="name-post-control">
+                        <form action="">
+                            <div class="post-sender-name">
+                                <input class="form-control" id="postSenderName" type="text" placeholder="Enter your name">
+                            </div>
+                            <div class="post-content">
+                                <textarea class="form-control" id="post" rows="6" placeholder="write what do you want?"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="post-element">
+                            <div class="d-flex justify-content-around flex-row bd-highlight mb-3">
+                                    <div class="p-2 bd-highlight">
+                                        <input  data-toggle="tooltip" data-placement="bottom" title="bg color" id="bg-color" class="all-btn" type="color" value="#48D1CC">
+                                    </div>
+                                    <div class="p-2 bd-highlight" >
+                                        <select  data-toggle="tooltip" data-placement="bottom" title="Font Size" id="font-size">
+                                            <option value="10">10</option>
+                                            <option value="12">12</option>
+                                            <option value="14">14</option>
+                                            <option value="16">16</option>
+                                            <option value="18">18</option>
+                                            <option value="20">20</option>
+                                        </select>
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                            <input  data-toggle="tooltip" data-placement="bottom" title="font color" id="font-color" class="all-btn" type="color" value="#fff000">
+                                    </div>
+                                    <div class="p-2 bd-highlight">
+                                        <select  data-toggle="tooltip" data-placement="bottom" title="Font" id="font-family">
+                                            <option value="Arial">Arial</option>
+                                            <option value="Times New Roman">Times New Roman</option>
+                                            <option value="Courier New">Courier New</option>
+                                            <option value="Comic Sans MS">Comic Sans MS</option>
+                                            <option value="fantasy">fantasy</option>
+                                        </select>
+                                    </div>  
+                           </div>
+                    </div>
+                    <div class="post-submit">
+                        <button class="btn btn-primary" id="post-btn">Post</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!--after post submit section -->
+
+    <section>
+            <div class="container-fluid bg-white px-5" id="post-container">
+                <div class="heading bg-info">
+                 <p class="h3 text-white text-uppercase">All Post Showing</p>
+                </div>
+                <div class="all-post-maintain">
+                   <!--  <div class="one-post-maintain">
+                        <div class="wrap-one-post">
+                            <div class="post-submission-maintain">
+                                <div class="post-header">
+                                    <div class="d-flex flex-row bd-highlight mb-3">
+                                        <div class="p-2 bd-highlight profile-picture">
+                                                <p data-letters="U"></p>
+                                        </div>
+                                        <div class="p-2 bd-highlight profile-name mt-1">
+                                            <p class="h4 text-primary">User Name</p>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="main-post shadow" style="background-color:#ff6347;">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat in qui totam voluptates? Ut iusto officiis aperiam re dolorum ex commodi dignissimos! Molestias, natus eaque.
+                                </div>
+                            </div>
+                            <div class="post-feedback-counter bg-light d-flex">
+                                <div class="like-counter-maintain mr-auto">
+                                    <i class="fa fa-thumbs-up  ml-4 " style="color: blue"><span class="badge badge-light text-primary">0</span></i>
+                                </div>
+                                <div class="comment-count-maintain">
+                                    <i class="fa fa-comment" style="color: gray"><span class="badge badge-light mr-4 text-primary">0</span></i>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="feedback-content">
+                                <div class="d-flex flex-row bd-highlight">
+                                    <div class="px-2 bd-highlight like-content">
+                                        <button type="button" class="btn btn-light
+                                        "><i class="fa fa-thumbs-up "></i> <span>Like</span> </button>
+                                    </div>
+                                    <div class="px-2 bd-highlight comment-content">
+                                        <button type="button" class="btn btn-light
+                                        "><i class="fa fa-comment "></i> <span>comment</span> </button>
+                                    </div>    
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="comment-post-maintain">
+                                <div class="comment-header bg-light">
+                                    <div class="d-flex bd-highlight">
+                                        <div class="bd-highlight  p-2">
+                                                <input style="width: 120px;" class="form-control" type="text" placeholder="Enter Name">
+                                        </div>
+                                        <div class="p-2 flex-grow-1 bd-highlight ">
+                                            <textarea style="width: 180px;" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="write your comment"></textarea>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <button class="btn btn-primary mt-4" type="submit">submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="all-comment-maintain ">
+                                <div class="single-comment-maintain">
+                                    <div class=" row bg-white m-3 shadow-sm p-2 rounded-left rounded-right">
+                                            <div class="comment-name-section col-4  text-primary">
+                                                    Jubel Ahmed
+                                            </div>
+                                            <div class="full-comment col-8">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, enim quae. Dolorem 
+                                         </div>
+                                    </div> 
+                                </div>
+                               
+                            </div>
+                       </div> 
+                    </div>
+                    -->
+
+                    <!-- second post-->
+                    
+                </div>
+            </div>    
+    </section>
+        
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+    <script src="js/domCreation.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.js"></script>
+    <script src="js/first.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
